@@ -13,7 +13,13 @@ namespace First_MVC_APP.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var nPlayer = new PlayerViewModel();
+            return View(nPlayer);
+        }
+
+        public IActionResult CreatePlayer(PlayerViewModel newPlayer)
+        {
+            return View("Index");
         }
     }
 }
