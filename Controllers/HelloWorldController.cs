@@ -7,9 +7,8 @@ namespace First_MVC_APP.Controllers
     {
         public IActionResult Index()
         {
-            DogViewModel doggo = new DogViewModel()
-            {Name = "Majki", Age = 11 };
-            return View(doggo);
+            PlayerViewModel player = new PlayerViewModel() { Name = "Jakub", Surname = "Klik", Age = 21, Possition = "Sharp Shooter", Number = 1 };
+            return View(player);
         }
 
         public IActionResult Create()

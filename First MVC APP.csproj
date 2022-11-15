@@ -7,4 +7,8 @@
     <RootNamespace>First_MVC_APP</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\DogViewModel.cs" />
+  </ItemGroup>
+
 </Project>
