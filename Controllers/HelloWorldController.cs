@@ -5,10 +5,12 @@ namespace First_MVC_APP.Controllers
 {
     public class HelloWorldController : Controller
     {
+        // We are using simple tab to save and write new player, without using data base 
+        private static List<PlayerViewModel> players = new List<PlayerViewModel>();
+
         public IActionResult Index()
         {
-            PlayerViewModel player = new PlayerViewModel() { Name = "Jakub", Surname = "Klik", Age = 21, Possition = "Sharp Shooter", Number = 1 };
-            return View(player);
+            return View(players);
         }
 
         public IActionResult Create()
@@ -19,7 +21,13 @@ namespace First_MVC_APP.Controllers
 
         public IActionResult CreatePlayer(PlayerViewModel newPlayer)
         {
-            return View("Index");
+            //adding new player to the list
+            players.Add(newPlayer);
+
+            //return View("Index");
+
+            //we are redirecting to index method, which create object from PlayerViewModel class
+            return RedirectToAction(nameof(Index));
         }
     }
 }

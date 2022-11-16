@@ -1,7 +1,14 @@
 ﻿@*We are telling compiler that we are writing c# code*@
-@model  First_MVC_APP.Models.PlayerViewModel;  
+@model  List<First_MVC_APP.Models.PlayerViewModel>;  
 
-<h1>Hello World bro!</h1>
-
-<h4>A player named @Model.Name @Model.Surname is @Model.Possition</h4>
-<h4>@Model.Name is @Model.Age years old</h4>
+<h1>Your dream team:</h1>
+<!-- unordered list -->
+<ul>
+	@foreach(var dog in Model) 
+	{
+		//list element
+		<li>
+			@dog.Name @dog.Surname @dog.Age @dog.Possition
+		</li>
+	}
+</ul>
