@@ -4,11 +4,11 @@
 <h1>Your dream team:</h1>
 <!-- unordered list -->
 <ul>
-	@foreach(var dog in Model) 
+	@foreach(var players in Model) 
 	{
 		//list element
 		<li>
-			@dog.Name @dog.Surname @dog.Age @dog.Possition
+			@players.Name @players.Surname at possition @players.Possition (@players.Age years old)
 		</li>
 	}
 </ul>
