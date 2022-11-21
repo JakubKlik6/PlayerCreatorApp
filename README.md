@@ -1,4 +1,3 @@
-## First MVC app in which user can add players and display all of them
+### First MVC app in which user can add players and display them
 
-https://user-images.githubusercontent.com/94892289/202280854-58ec2740-7c16-49b4-8252-7de231424990.mp4
-
+![- First_MVC_APP - Google Chrome 2022-11-16 20-51-09](https://user-images.githubusercontent.com/94892289/202995273-d1f2e9ef-0861-4533-b9b0-a90623fd874a.gif)
